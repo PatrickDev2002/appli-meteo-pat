@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 3%;
+}
+
+#affichageParJour {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  position: absolute;
+  bottom: 10%;
+}
+
+#affichageParHeure {
+  display: flex;
+  width: 15em;
+  height: 20em;
+  position: absolute;
+  overflow: scroll;
+  left: 76%;
+  top: 5%;
+  flex-direction: column;
+  background: rgb(119 175 196 / 88%);
+  border: 2px #584b8940 solid;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 2em;
+  font-family: "Special Elite", cursive;
+}
+
+.prevision-jour {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  padding: 1em;
+  border-radius: 0.7em;
+  width: 12%;
+}
+.prevision-date {
+  font-size: 1.5em;
+  font-style: oblique;
+  color: cornflowerblue;
+}
+.prevision-temperature {
+  color: orange;
+  font-family: cursive;
+}
+.prevision-description {
+  font-family: "Special Elite", cursive;
+  color: darkseagreen;
+}
+
+.title {
+  font-family: "Rubik Gemstones", cursive;
+  font-weight: 100;
+  font-size: xxx-large;
+  position: relative;
+  text-align: center;
+  background-color: rgba(17, 25, 40, 0.75);
+  color: antiquewhite;
+  width: 8em;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  left: 45%;
+}
+
+.info {
+  font-family: "Special Elite", cursive;
+  border: 1px #ffffff7a solid;
+  padding: 1em;
+  border-radius: 1em;
+  background: #faebd7d1;
+  width: 30em;
+}
+
+#ville {
+  font-size: 4em;
+  text-transform: capitalize;
+  font-family: "Special Elite", cursive;
+}
+
+#temperature {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#changer {
+  position: absolute;
+  width: 10em;
+  background: rgb(152 206 239 / 90%);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 0.5em;
+  left: 10em;
+}
+
+#tempHeure {
+  font-size: 2em;
+  display: table-cell;
+}
+
+.prevision-heure {
+  font-size: 0.8em;
+}
+
+.hour {
+  text-decoration: underline;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.temp {
+  color: red;
+}
+
+.desc {
+  color: darkgreen;
+}

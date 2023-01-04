@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Météo</title>
+    <script src="index.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"
+      integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="app">
+      <div>
+        <div>
+          <!-- Titre -->
+          <h1 class="title">Météo</h1>
+
+          <!-- Ville / Temperature -->
+          <div class="info">
+            <span id="ville">paris</span>
+
+            <div id="temperature">
+              <span id="temperature_label"> xx.x </span>
+              <span id="condition"></span>
+            </div>
+            <i class="wi"></i>
+          </div>
+          <div id="affichageParHeure"></div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Changer de ville -->
+        <div id="changer">Changer de ville</div>
+      </div>
+    </section>
+    <div id="affichageParJour"></div>
+  </body>
+</html>
